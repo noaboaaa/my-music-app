@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="left-column">
+        <h2>All Artists</h2>
+        <div id="artists">
+          <!-- Display artists here -->
+        </div>
+      </div>
+      <div id="middle-column">
+        <h2>Favorite Artists</h2>
+        <div id="favorites">
+          <!-- Display favorite artists here -->
+        </div>
+      </div>
+      <div id="right-column">
+        <h2>Add Artist</h2>
+        <div id="artist-form" class="fixed-form">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+            <label for="genres">Genres (comma-separated):</label>
+            <input type="text" id="genres" required />
+            <label for="activeSince">Active Since:</label>
+            <input type="text" id="activeSince" required />
+            <label for="website">Website:</label>
+            <input type="url" id="website" required />
+            <button id="save-artist">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

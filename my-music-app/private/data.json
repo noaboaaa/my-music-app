@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Artist 1",
+    "genres": [
+      "Rock",
+      "Pop"
+    ],
+    "activeSince": "2005",
+    "website": "https://www.artist1.com",
+    "id": "1698159392688",
+    "favorite": true
+  },
+  {
+    "name": "Artist 2",
+    "genres": [
+      "Hip-Hop",
+      "Rap"
+    ],
+    "activeSince": "2010",
+    "website": "https://www.artist2.com",
+    "id": "1698159413308",
+    "favorite": true
+  },
+  {
+    "name": "Artist 3",
+    "genres": [
+      "Electronic",
+      "Dance"
+    ],
+    "activeSince": "2008",
+    "website": "https://www.artist3.com",
+    "id": "1698159421893",
+    "favorite": false
+  },
+  {
+    "name": "Artist 4",
+    "genres": [
+      "Country"
+    ],
+    "activeSince": "1990",
+    "website": "https://www.artist4.com",
+    "id": "1698159430237",
+    "favorite": false
+  },
+  {
+    "name": "Artist 5",
+    "genres": [
+      "Indie",
+      "Alternative"
+    ],
+    "activeSince": "2012",
+    "website": "https://www.artist5.com",
+    "id": "1698159438831",
+    "favorite": true
+  },
+  {
+    "name": "Artist 6",
+    "genres": [
+      "Classical"
+    ],
+    "activeSince": "1985",
+    "website": "https://www.artist6.com",
+    "id": "1698159447112",
+    "favorite": false
+  }
+]

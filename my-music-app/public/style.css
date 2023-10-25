@@ -1,0 +1,99 @@
+/* ... (previous CSS styles) */
+#app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+#left-column, #middle-column, #right-column {
+  flex-basis: 30%; /* Adjust the width of columns as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+#artist-form {
+  margin-top: 20px;
+}
+
+.artist-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Style for the fixed artist form */
+.fixed-form {
+  position: fixed;
+  top: 20px; /* Adjust as needed for the desired position */
+  right: 20px; /* Adjust as needed for the desired position */
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 400px; /* Adjust as needed for the desired width */
+}
+
+.fixed-form h2 {
+  font-size: 20px; /* Adjust as needed for the desired font size */
+  margin-top: 0;
+}
+
+.fixed-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.fixed-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px; /* Adjust as needed for the desired font size */
+}
+
+.fixed-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 18px; /* Adjust as needed for the desired font size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fixed-form button:hover {
+  background-color: #0056b3;
+}
