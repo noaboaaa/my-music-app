@@ -1,99 +1,185 @@
-/* ... (previous CSS styles) */
-#app {
-  display: flex;
-  justify-content: space-between;
+/* ========== Reset and Base Styles ========== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ========== Header Styles ========== */
+
+header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+}
+
+/* ========== Main Content Styles ========== */
+
+main {
+  background-color: #fff;
   padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+main h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+main select,
+main input[type="text"],
+main input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+main button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ========== Grid Styles ========== */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== Form Styles ========== */
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
-#left-column, #middle-column, #right-column {
-  flex-basis: 30%; /* Adjust the width of columns as needed */
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="url"] {
+  width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  margin: 10px;
+  border-radius: 3px;
 }
 
-#artist-form {
-  margin-top: 20px;
-}
+/* ========== Button Styles ========== */
 
-.artist-card {
-  border: 1px solid #ccc;
+button {
+  width: 100%;
   padding: 10px;
-  margin: 10px;
-  width: 300px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#modal {
-  position: fixed;
+button:hover {
+  background-color: #005a9c;
+}
+
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
 }
 
 .modal-content {
-  background-color: white;
+  position: relative;
+  margin: 15% auto;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.hidden {
-  display: none;
-}
-
-
-/* Style for the fixed artist form */
-.fixed-form {
-  position: fixed;
-  top: 20px; /* Adjust as needed for the desired position */
-  right: 20px; /* Adjust as needed for the desired position */
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  max-width: 400px; /* Adjust as needed for the desired width */
-}
-
-.fixed-form h2 {
-  font-size: 20px; /* Adjust as needed for the desired font size */
-  margin-top: 0;
-}
-
-.fixed-form label {
-  display: block;
-  margin-top: 10px;
+.close-btn {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
 }
 
-.fixed-form input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  font-size: 16px; /* Adjust as needed for the desired font size */
-}
-
-.fixed-form button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  font-size: 18px; /* Adjust as needed for the desired font size */
-  background-color: #007bff;
-  color: white;
-  border: none;
+.close-btn:hover, .close-btn:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.fixed-form button:hover {
-  background-color: #0056b3;
-}
+

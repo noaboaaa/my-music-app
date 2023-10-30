@@ -1,66 +1,57 @@
 [
   {
-    "name": "Artist 1",
-    "genres": [
-      "Rock",
-      "Pop"
-    ],
-    "activeSince": "2005",
-    "website": "https://www.artist1.com",
-    "id": "1698159392688",
-    "favorite": true
+    "id": "01",
+    "name": "Ed Sheeran",
+    "birthdate": "17/02/1991",
+    "activeSince": "n",
+    "genres": "Pop, Folk, Rock",
+    "labels": "Asylum, Atlantic",
+    "website": "https://www.google.com/search?q=img+hamsger+url&sca_esv=577798594&rlz=1C5CHFA_enDK1020DK1020&biw=904&bih=994&sxsrf=AM9HkKkld-Pt85Zuron6ldWlDxS0yMpKqQ%3A1698667068796&ei=PJo_ZcGdMP_Yxc8P45aTqA8&ved=0ahUKEwjBq-j5252CAxV_bPEDHWPLBPUQ4dUDCBA&uact=5&oq=img+hamsger+url&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2ltZyBoYW1zZ2VyIHVybDIHECEYoAEYCjIHECEYoAEYCkiLE1C2AlinEXABeACQAQCYAaIBoAHpBKoBAzMuM7gBA8gBAPgBAcICCBAAGKIEGLADwgIFEAAYogTCAgcQIxiwAhgnwgIKEAAYCBgeGA0YCsICDBAAGAgYHhgNGA8YCsICBRAhGKAB4gMEGAEgQYgGAZAGBA&sclient=gws-wiz-serp#vhid=adYoYVdUfV1qvM&vssid=l",
+    "image": "https://i.pinimg.com/564x/ee/a8/c2/eea8c284697dc839cbe34e37a53944ca.jpg",
+    "shortDescription": "Edward Christopher Sheeran MBE (born 17 February 1991) is an English singer, songwriter, musician, and actor. His records have broken numerous charts and sales records, with hits like 'Shape of You' and 'Thinking Out Loud' garnering billions of streams globally."
   },
   {
-    "name": "Artist 2",
-    "genres": [
-      "Hip-Hop",
-      "Rap"
-    ],
-    "activeSince": "2010",
-    "website": "https://www.artist2.com",
-    "id": "1698159413308",
-    "favorite": true
+    "id": "02",
+    "name": "Adele",
+    "birthdate": "05/05/1988",
+    "activeSince": "2006",
+    "genres": "Soul, Pop, R&B",
+    "labels": "XL, Columbia",
+    "website": "https://www.adele.com/",
+    "image": "https://i.pinimg.com/564x/d5/0d/e3/d50de31e8394f6ec7378c24dae915c1e.jpg",
+    "shortDescription": "Adele Laurie Blue Adkins MBE (born 5 May 1988) is an English singer-songwriter. She is one of the world's best-selling music artists, known for her deep, emotive voice and her chart-topping hits."
   },
   {
-    "name": "Artist 3",
-    "genres": [
-      "Electronic",
-      "Dance"
-    ],
-    "activeSince": "2008",
-    "website": "https://www.artist3.com",
-    "id": "1698159421893",
-    "favorite": false
+    "id": "04",
+    "name": "Taylor Swift",
+    "birthdate": "13/12/1989",
+    "activeSince": "2006",
+    "genres": "Pop, Country, Rock",
+    "labels": "Big Machine, Republic",
+    "website": "https://www.taylorswift.com/",
+    "image": "https://i.pinimg.com/236x/d4/29/50/d42950f360783a9ac8a27598d7c2b50d.jpg",
+    "shortDescription": "Taylor Alison Swift is an American singer-songwriter. She is known for her narrative songwriting and is one of the world's best-selling music artists."
   },
   {
-    "name": "Artist 4",
-    "genres": [
-      "Country"
-    ],
-    "activeSince": "1990",
-    "website": "https://www.artist4.com",
-    "id": "1698159430237",
-    "favorite": false
+    "id": "05",
+    "name": "John Legend",
+    "birthdate": "28/12/1978",
+    "activeSince": "2004",
+    "genres": "R&B, Soul, Pop",
+    "labels": "GOOD, Columbia",
+    "website": "https://www.johnlegend.com/",
+    "image": "https://i.pinimg.com/236x/1c/57/ef/1c57ef4d7e3fdd4716bf6af3b655ce97.jpg",
+    "shortDescription": "John Roger Stephens, known professionally as John Legend, is an American singer, songwriter, record producer, actor, film producer, and philanthropist. He is known for his rich, soulful voice and hit songs like 'All of Me.'"
   },
   {
-    "name": "Artist 5",
-    "genres": [
-      "Indie",
-      "Alternative"
-    ],
-    "activeSince": "2012",
-    "website": "https://www.artist5.com",
-    "id": "1698159438831",
-    "favorite": true
-  },
-  {
-    "name": "Artist 6",
-    "genres": [
-      "Classical"
-    ],
-    "activeSince": "1985",
-    "website": "https://www.artist6.com",
-    "id": "1698159447112",
-    "favorite": false
+    "id": "06",
+    "name": "Beyoncé",
+    "birthdate": "04/09/1981",
+    "activeSince": "1997",
+    "genres": "R&B, Pop, Hip Hop",
+    "labels": "Parkwood, Columbia",
+    "website": "https://www.beyonce.com/",
+    "image": "https://i.pinimg.com/236x/d4/29/50/d42950f360783a9ac8a27598d7c2b50d.jpg",
+    "shortDescription": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress, and record producer. She is recognized for her powerful vocals, stage presence, and influence in the music industry."
   }
 ]

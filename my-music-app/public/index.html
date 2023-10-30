@@ -1,42 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Music App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div id="left-column">
-        <h2>All Artists</h2>
-        <div id="artists">
-          <!-- Display artists here -->
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Artists</title>
+</head>
+<body>
+  <header>
+    <h1>Explore Artists</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="allArtists">All Artists</a></li>
+        <li><a href="#" id="favoritedArtists">Favorited Artists</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="filters">
+      <h2>Filter and Sort</h2>
+      <div class="filter">
+        <label for="genreFilter">Filter by:</label>
+        <select id="genreFilter">
+          <option value="all">All</option>
+          <option value="favorites">Favorites</option>
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="hiphop">Hip Hop</option>
+          <option value="jazz">Jazz</option>
+          <option value="folk">Folk</option>
+          <option value="soul">Soul</option>
+          <option value="r&b">R&B</option>
+          <option value="country">Country</option>
+        </select>
       </div>
-      <div id="middle-column">
-        <h2>Favorite Artists</h2>
-        <div id="favorites">
-          <!-- Display favorite artists here -->
-        </div>
+      <div class="filter">
+        <label for="sortBy">Sort by Active Since:</label>
+        <select id="sortBy">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
       </div>
-      <div id="right-column">
-        <h2>Add Artist</h2>
-        <div id="artist-form" class="fixed-form">
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required />
-            <label for="genres">Genres (comma-separated):</label>
-            <input type="text" id="genres" required />
-            <label for="activeSince">Active Since:</label>
-            <input type="text" id="activeSince" required />
-            <label for="website">Website:</label>
-            <input type="url" id="website" required />
-            <button id="save-artist">Save</button>
-          </form>
-        </div>
+    </section>
+    <section id="artists">
+      <h2>Artists</h2>
+      <ul id="artists-grid">
+      </ul>
+    </section>
+    <section id="addArtist">
+      <h2>Add New Artist</h2>
+      <form id="addArtistForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="birthdate">Birthdate:</label>
+        <input type="text" id="birthdate" required>
+        <label for="activeSince">Active Since:</label>
+        <input type="text" id="activeSince" required>
+        <label for="genres">Genres:</label>
+        <input type="text" id="genres" required>
+        <label for="labels">Labels:</label>
+        <input type="text" id="labels" required>
+        <label for="website">Website:</label>
+        <input type="url" id="website" required>
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" required>
+        <label for="description">Short Description:</label>
+        <input type="text" id="description" required>
+        <button type="submit">Add Artist</button>
+      </form>
+    </section>
+
+    <!-- Update Existing Artist Modal -->
+    <div id="updateArtistModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Update Existing Artist</h2>
+        <form id="form-update">
+          <label for="updateName">Name:</label>
+          <input type="text" id="updateName" required>
+          <label for="updateBirthdate">Birthdate:</label>
+          <input type="text" id="updateBirthdate" required>
+          <label for="updateGenres">Genres:</label>
+          <input type="text" id="updateGenres" required>
+          <label for="updateImage">Image URL:</label>
+          <input type="url" id="updateImage" required>
+          <label for="updateLabels">Labels:</label>
+          <input type="text" id="updateLabels" required>
+          <label for="updateActiveSince">Active Since:</label>
+          <input type="text" id="updateActiveSince" required>
+          <label for="updateWebsite">Website:</label>
+          <input type="url" id="updateWebsite" required>
+          <label for="updateDescription">Short Description:</label>
+          <input type="text" id="updateDescription" required>
+          <button type="submit" class="btn-update-artist">Update Artist</button>
+        </form>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+  <section id="favorites">
+     <h2>Favorites</h2>
+     <div id="favoriteList"></div>
+  </section>
+  </main>
+  <script src="main.js"></script>
+</body>
 </html>
